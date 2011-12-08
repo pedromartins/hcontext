@@ -1,0 +1,28 @@
+Name:                hcontext
+Version:             0.1
+Description:         Context-awareness abstractions for Haskell.
+License:             BSD3
+Author:              Pedro Martins
+Maintainer:          pedromartins.pt@gmail.com
+Build-Type:          Simple
+Cabal-Version:       >=1.2
+
+Library
+  Build-Depends:   base >= 3 && < 5, HList, haskell-src-exts,
+                   haskell-src-meta, template-haskell, containers
+  Exposed-modules: Context.Implicit,
+                   Context.Knowledge,
+                   Context.Prelude,
+                   Context.Runtime,
+                   Context.Types,
+                   Context.Utils,
+                   Context.Knowledge.Features,
+                   Context.Knowledge.HList,
+                   Context.Knowledge.Relevance,
+                   Context.Runtime.Features,
+                   Context.Runtime.PMonad,
+                   Context.Runtime.Realizable,
+                   Context.Runtime.Runtime
+  -- ghc-options:       -Wall
+  hs-source-dirs:    src
+
